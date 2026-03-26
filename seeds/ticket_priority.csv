@@ -1,0 +1,5 @@
+priority,priority_description,sla_hours
+low,Low Priority,72
+normal,Normal Priority,48
+high,High Priority,24
+urgent,Urgent Priority,8

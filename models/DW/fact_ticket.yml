@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: fact_ticket
+    columns:
+      - name: ticket_id
+        tests:
+          - not_null
+          - unique
+
+      - name: user_sk
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_user')
+                field: user_sk
+
+      - name: organization_sk
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_organization')
+                field: organization_sk
+
+      - name: resolution_hours
+        tests:
+          - sla_breach

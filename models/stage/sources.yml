@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: stage
+    schema: stage
+
+    tables:
+      - name: users
+      - name: organizations
+      - name: tickets

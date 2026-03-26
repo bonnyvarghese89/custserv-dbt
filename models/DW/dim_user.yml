@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_user
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+
+      - name: email
+        tests:
+          - not_null
