@@ -2,7 +2,8 @@
     materialized='table',
     schema='DW',
     pre_hook="INSERT INTO main.audit_log VALUES ('dim_user','start', CURRENT_TIMESTAMP)",
-    post_hook="INSERT INTO main.audit_log VALUES ('dim_user','end', CURRENT_TIMESTAMP)"
+    post_hook="INSERT INTO main.audit_log VALUES ('dim_user','end', CURRENT_TIMESTAMP)",
+
 ) }}
 
 SELECT

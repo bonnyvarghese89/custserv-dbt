@@ -1,4 +1,5 @@
-{{ config(materialized='view', schema='ODS') }}
+{{ config(materialized='view', schema='ODS'
+ ) }}
 SELECT
     ticket_id,
     requester_id,
