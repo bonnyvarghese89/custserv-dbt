@@ -1,0 +1,13 @@
+models:
+  - name: stg_users
+    latest_version: 1
+    versions:
+      - v: 1
+    columns:
+      - name: user_id
+        description: "Unique user id"
+        data_type: integer
+
+      - name: user_name
+        description: "User name"
+        data_type: string
